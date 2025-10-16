@@ -25,7 +25,7 @@ export class ProductsController {
 
   // @Get(':id')
   @MessagePattern({ cmd: 'find_one_product' })
-  findOne(@Payload('id' ,ParseIntPipe) id: number) {
+  findOne(@Payload('id' ,ParseIntPipe) id: number) { // al ponder 'id' este ya lo extrae del cuerpo de la peticion.
     return this.productsService.findOne(id);
   }
 
