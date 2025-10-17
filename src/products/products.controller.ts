@@ -35,8 +35,6 @@ export class ProductsController {
     // @Param('id', ParseIntPipe) id: number, 
     // @Body() updateProductDto: UpdateProductDto,
     @Payload() updateProductDto: UpdateProductDto,
-
-
     ) 
     {
 
